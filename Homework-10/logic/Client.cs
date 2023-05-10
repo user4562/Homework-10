@@ -14,6 +14,8 @@ namespace Homework_10.logic
         public DateTime DateCreate { get; set; }
         public DateTime DateChange { get; set; }
 
+        public string WhoChange { get; set; }
+
         public Client(string firstName, string lastName, string patronymic, 
                       PhoneNumber phoneNumber, PassportNumber passportNumber,
                       DateTime dateCreate, DateTime dateChange)

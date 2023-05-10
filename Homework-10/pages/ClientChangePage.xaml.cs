@@ -98,8 +98,10 @@ namespace Homework_10.pages
             if(done)
             {
                 app.CurrentClient.DateChange = DateTime.Now;
+                app.CurrentClient.WhoChange = app.CurrentUser.Title;
 
                 DBClients.Save();
+
 
                 app.MainPage = new ClientsListPage();
 
@@ -176,6 +178,12 @@ namespace Homework_10.pages
 
             DateCreate.Text = dateCreate;
             DateChange.Text = dateChange;
+
+            if (!empty && client.WhoChange != null)
+            {
+                WhoChangeLabel.Visibility = System.Windows.Visibility.Visible;
+                WhoChange.Text = client.WhoChange;
+            }
         }
 
         private void OnWriteInput(object sender, RoutedEventArgs e)

@@ -89,6 +89,14 @@
                                Foreground="#555"/>
                     <TextBlock x:Name="DateChange"
                                Foreground="#555"/>
+                    <TextBlock x:Name="WhoChangeLabel" 
+                               Visibility="Collapsed"
+                               Text="Изменил:"
+                               Margin="5,0,0,0"
+                               Foreground="#333"/>
+                    <TextBlock x:Name="WhoChange" 
+                               Margin="5,0,0,0"
+                               Foreground="#333"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

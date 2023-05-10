@@ -2,7 +2,7 @@
 {
     internal class Manager : User
     {
-        public override string Title { get; } = "Manager";
+        public override string Title { get; } = "Менеджер";
         public override Access[] Accesses { get; } = new Access[]
         {
             Access.ReadName,

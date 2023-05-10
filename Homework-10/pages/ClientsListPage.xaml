@@ -66,6 +66,9 @@
                                        Foreground="#555"/>
                             <TextBlock Text="{Binding Path=DateChange}"
                                        Foreground="#555"/>
+                            <TextBlock Text="{Binding Path=WhoChange}"
+                                       Margin="5,0,0,0"
+                                       Foreground="#333"/>
                         </StackPanel>
                     </StackPanel>
 

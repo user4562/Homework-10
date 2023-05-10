@@ -40,6 +40,13 @@ namespace Homework_10.pages
 
             DateCreate.Text = empty ? "Null" : client.DateCreate.ToString();
             DateChange.Text = empty ? "Null" : client.DateChange.ToString();
+
+            if(!empty && client.WhoChange != null)
+            {
+                WhoChangeLabel.Visibility = System.Windows.Visibility.Visible;
+                WhoChange.Text = client.WhoChange;
+            }
+            
         }
     }
 }
